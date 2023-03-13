@@ -14,7 +14,7 @@ import (
 const (
 	DEFAULT_RATE   = time.Minute
 	DEFAULT_LIMIT  = 40
-	DEFAULT_WINDOW = 10
+	DEFAULT_WINDOW = 1
 	DEFAULT_MSG    = "ONHOLD"
 )
 

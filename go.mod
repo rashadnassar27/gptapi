@@ -13,6 +13,8 @@ require (
 	github.com/rs/cors v1.8.3
 )
 
+require github.com/smartystreets/goconvey v1.7.2 // indirect
+
 require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/codemodus/kace v0.5.1 // indirect
@@ -24,13 +26,12 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/segmentio/encoding v0.1.15 // indirect
 	github.com/technoweenie/multipartstreamer v1.0.1 // indirect
-	github.com/twinj/uuid v1.0.0
 	github.com/vmihailenco/bufpool v0.1.11 // indirect
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.1 // indirect
-	github.com/wneessen/go-mail v0.3.8 // indirect
+	github.com/wneessen/go-mail v0.3.8
 	github.com/yanzay/log v0.0.0-20160419144809-87352bb23506 // indirect
-	github.com/yanzay/tbot v1.0.0 // indirect
+	github.com/yanzay/tbot v1.0.0
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a // indirect
 	golang.org/x/net v0.0.0-20210428140749-89ef3d95e781 // indirect
 	google.golang.org/appengine v1.6.6 // indirect

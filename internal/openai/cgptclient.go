@@ -123,21 +123,12 @@ func (g *CGPTClient) SendText(text string) string {
 		Role:    "system",
 		Content: g.prompt,
 	}
-	systemMsg2 := CGPTMessage{
-		Role: "user",
-		Content: `
-		if user ask you to generate a photo/pic you answer only with, "{{description}}", {description} is what the user asked to generate.
-		Example:
-		user: please generate a pic for a dog running in the rain.
-		answer: {a dog running in the rain}
-		`,
-	}
 	msg := CGPTMessage{
 		Role:    "user",
 		Content: text,
 	}
 	messages := make([]CGPTMessage, 0)
-	messages = append(messages, systemMsg, systemMsg2)
+	messages = append(messages, systemMsg)
 	messages = append(messages, g.history.GetMessages()...)
 	messages = append(messages, msg)
 	requestBody := CGPTRequest{
